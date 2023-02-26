@@ -17,8 +17,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var fullName: UILabel!
     
     @IBOutlet weak var parkDescription: UITextView!
-    @IBOutlet weak var urlTextField: UITextField!
-    @IBOutlet weak var latLonTextField: UITextField!
+    
+    @IBOutlet weak var urlData: UILabel!
+    
+    @IBOutlet weak var latLonData: UILabel!
     
     @IBOutlet weak var directionsInfoTextView: UITextView!
     override func viewDidLoad() {
@@ -47,11 +49,9 @@ class DetailViewController: UIViewController {
         
         self.fullName.text = parkInfo?.fullName
         self.parkDescription.text = parkInfo?.description
-        self.urlTextField.text = parkInfo?.url.absoluteString
-        self.latLonTextField.text = parkInfo?.latLong
+        self.urlData.text = parkInfo?.url.absoluteString
+        self.latLonData.text = parkInfo?.latLong
         self.directionsInfoTextView.text = parkInfo?.directionsInfo
-        
-        print("urlTextField.intrinsicContentSize \(self.urlTextField.intrinsicContentSize)")
     }
 
     func downloadImage(from url: URL) {

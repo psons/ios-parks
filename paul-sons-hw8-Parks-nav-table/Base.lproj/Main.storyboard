@@ -75,23 +75,13 @@
                                 <rect key="frame" x="16" y="460" width="382" height="170"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxa-DP-xqu">
-                                        <rect key="frame" x="8" y="16.666666666666686" width="33" height="17"/>
+                                        <rect key="frame" x="8" y="10" width="33" height="17"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V88-sW-TM2">
-                                        <rect key="frame" x="53" y="8" width="321" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GqG-H6-MD7">
-                                        <rect key="frame" x="80" y="50" width="294" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uLV-22-WFq">
-                                        <rect key="frame" x="8" y="92" width="366" height="70"/>
+                                        <rect key="frame" x="8" y="60" width="366" height="102"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -99,29 +89,39 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxj-7y-e61">
-                                        <rect key="frame" x="8" y="58.666666666666629" width="60" height="17"/>
+                                        <rect key="frame" x="8" y="35" width="60" height="17"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="park URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pU-2m-4aA">
+                                        <rect key="frame" x="53" y="11" width="52" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="park Lat Lon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcm-dQ-hZY">
+                                        <rect key="frame" x="80" y="36" width="71" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
-                                    <constraint firstItem="V88-sW-TM2" firstAttribute="top" secondItem="VWG-7j-RcM" secondAttribute="top" constant="8" id="4cf-PR-KFP"/>
+                                    <constraint firstItem="uLV-22-WFq" firstAttribute="top" secondItem="jxj-7y-e61" secondAttribute="bottom" constant="8" id="0V7-AR-Jqh"/>
+                                    <constraint firstItem="6pU-2m-4aA" firstAttribute="centerY" secondItem="mxa-DP-xqu" secondAttribute="centerY" id="2ai-eU-Qwl"/>
                                     <constraint firstItem="jxj-7y-e61" firstAttribute="leading" secondItem="VWG-7j-RcM" secondAttribute="leading" constant="8" id="75X-J1-p93"/>
                                     <constraint firstAttribute="bottom" secondItem="uLV-22-WFq" secondAttribute="bottom" constant="8" id="9Ov-ye-jeY"/>
                                     <constraint firstAttribute="trailing" secondItem="uLV-22-WFq" secondAttribute="trailing" constant="8" id="ChY-2R-a7o"/>
-                                    <constraint firstItem="GqG-H6-MD7" firstAttribute="centerY" secondItem="jxj-7y-e61" secondAttribute="centerY" id="D8X-mu-TEE"/>
+                                    <constraint firstItem="jxj-7y-e61" firstAttribute="top" secondItem="mxa-DP-xqu" secondAttribute="bottom" constant="8" id="F4E-iQ-WKK"/>
                                     <constraint firstItem="mxa-DP-xqu" firstAttribute="leading" secondItem="VWG-7j-RcM" secondAttribute="leading" constant="8" id="FZ6-it-TNs"/>
                                     <constraint firstItem="uLV-22-WFq" firstAttribute="leading" secondItem="VWG-7j-RcM" secondAttribute="leading" constant="8" id="JRT-Tv-wtc"/>
-                                    <constraint firstItem="V88-sW-TM2" firstAttribute="centerY" secondItem="mxa-DP-xqu" secondAttribute="centerY" id="Kmd-xU-DhF"/>
-                                    <constraint firstAttribute="trailing" secondItem="GqG-H6-MD7" secondAttribute="trailing" constant="8" id="QCj-KZ-xKb"/>
-                                    <constraint firstItem="uLV-22-WFq" firstAttribute="top" secondItem="GqG-H6-MD7" secondAttribute="bottom" constant="8" id="ZZy-cX-QoT"/>
-                                    <constraint firstItem="GqG-H6-MD7" firstAttribute="top" secondItem="V88-sW-TM2" secondAttribute="bottom" constant="8" id="cCR-YV-90R"/>
                                     <constraint firstAttribute="height" constant="170" id="jWW-8V-Xpj"/>
-                                    <constraint firstItem="V88-sW-TM2" firstAttribute="leading" secondItem="mxa-DP-xqu" secondAttribute="trailing" constant="12" id="mmG-B3-463"/>
-                                    <constraint firstAttribute="trailing" secondItem="V88-sW-TM2" secondAttribute="trailing" constant="8" id="smd-sO-clu"/>
-                                    <constraint firstItem="GqG-H6-MD7" firstAttribute="leading" secondItem="jxj-7y-e61" secondAttribute="trailing" constant="12" id="uh9-yc-Dbn"/>
+                                    <constraint firstItem="Xcm-dQ-hZY" firstAttribute="leading" secondItem="jxj-7y-e61" secondAttribute="trailing" constant="12" id="lr7-lJ-eSZ"/>
+                                    <constraint firstItem="mxa-DP-xqu" firstAttribute="top" secondItem="VWG-7j-RcM" secondAttribute="top" constant="10" id="tkM-3m-GOf"/>
+                                    <constraint firstItem="Xcm-dQ-hZY" firstAttribute="centerY" secondItem="jxj-7y-e61" secondAttribute="centerY" id="vNW-tp-gPC"/>
+                                    <constraint firstItem="6pU-2m-4aA" firstAttribute="leading" secondItem="mxa-DP-xqu" secondAttribute="trailing" constant="12" id="yUa-An-ykm"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -147,9 +147,9 @@
                         <outlet property="bannerImage" destination="e7J-gi-92o" id="8A3-bd-OuW"/>
                         <outlet property="directionsInfoTextView" destination="uLV-22-WFq" id="Rad-Y8-AzX"/>
                         <outlet property="fullName" destination="hdX-Vp-ebT" id="Yek-8Y-NwU"/>
-                        <outlet property="latLonTextField" destination="GqG-H6-MD7" id="Y6F-Z7-azN"/>
+                        <outlet property="latLonData" destination="Xcm-dQ-hZY" id="Gis-JR-2Ue"/>
                         <outlet property="parkDescription" destination="mGB-5p-vrf" id="Ipt-n9-Hgf"/>
-                        <outlet property="urlTextField" destination="V88-sW-TM2" id="c2P-vr-zCZ"/>
+                        <outlet property="urlData" destination="6pU-2m-4aA" id="vIU-ov-Umo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SG-fG-Y0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
