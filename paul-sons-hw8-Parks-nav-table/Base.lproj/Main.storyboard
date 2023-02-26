@@ -54,12 +54,9 @@
                                     <constraint firstAttribute="height" constant="200" id="kDK-VA-hWi"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mGB-5p-vrf" userLabel="DescriptionTextView">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="240" verticalCompressionResistancePriority="740" ambiguous="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mGB-5p-vrf" userLabel="DescriptionTextView">
                                 <rect key="frame" x="16" y="300" width="382" height="160"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="160" id="djU-ew-GNS"/>
-                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -72,7 +69,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWG-7j-RcM">
-                                <rect key="frame" x="16" y="460" width="382" height="170"/>
+                                <rect key="frame" x="16" y="558" width="382" height="170"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxa-DP-xqu">
                                         <rect key="frame" x="8" y="10" width="33" height="17"/>
@@ -134,10 +131,11 @@
                             <constraint firstItem="e7J-gi-92o" firstAttribute="leading" secondItem="kfG-XW-4z2" secondAttribute="leading" constant="16" id="FFC-OE-e2r"/>
                             <constraint firstItem="kfG-XW-4z2" firstAttribute="trailing" secondItem="hdX-Vp-ebT" secondAttribute="trailing" constant="16" id="MKL-bf-sXA"/>
                             <constraint firstItem="hdX-Vp-ebT" firstAttribute="top" secondItem="e7J-gi-92o" secondAttribute="bottom" constant="20" id="SCf-Do-8Os"/>
-                            <constraint firstItem="VWG-7j-RcM" firstAttribute="top" secondItem="mGB-5p-vrf" secondAttribute="bottom" id="Tsg-Sg-fbR"/>
+                            <constraint firstItem="VWG-7j-RcM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mGB-5p-vrf" secondAttribute="bottom" constant="8" id="Tsg-Sg-fbR"/>
                             <constraint firstItem="kfG-XW-4z2" firstAttribute="trailing" secondItem="VWG-7j-RcM" secondAttribute="trailing" constant="16" id="WPs-a8-qhs"/>
                             <constraint firstItem="mGB-5p-vrf" firstAttribute="top" secondItem="hdX-Vp-ebT" secondAttribute="bottom" constant="12" id="WqV-8H-CdU"/>
                             <constraint firstItem="VWG-7j-RcM" firstAttribute="leading" secondItem="kfG-XW-4z2" secondAttribute="leading" constant="16" id="ciq-rU-5at"/>
+                            <constraint firstItem="kfG-XW-4z2" firstAttribute="bottom" secondItem="VWG-7j-RcM" secondAttribute="bottom" constant="8" id="kG6-bK-8Ar"/>
                             <constraint firstItem="kfG-XW-4z2" firstAttribute="trailing" secondItem="e7J-gi-92o" secondAttribute="trailing" constant="16" id="ron-Ge-kwd"/>
                             <constraint firstItem="hdX-Vp-ebT" firstAttribute="leading" secondItem="kfG-XW-4z2" secondAttribute="leading" constant="16" id="tVo-Pb-D6V"/>
                         </constraints>
